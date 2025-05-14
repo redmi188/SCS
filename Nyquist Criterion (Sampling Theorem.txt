@@ -1,0 +1,39 @@
+Nyquist Criterion (Sampling Theorem)
+Definition:
+The Nyquist Criterion is a fundamental principle in signal processing that states:
+
+A continuous-time signal can be exactly reconstructed from its samples if it is band-limited and sampled at a rate greater than twice its highest frequency component.
+
+✅ Nyquist Rate:
+If a signal has a maximum frequency 𝑓max (band-limited), then the minimum sampling frequency 
+𝑓𝑠 must be:
+𝑓𝑠≥2𝑓max 
+This minimum rate is called the Nyquist rate.
+
+Sampling below this rate causes aliasing, which means overlapping of frequency components leading to distortion in the reconstructed signal.
+
+🔹 What is PAM (Pulse Amplitude Modulation)?
+PAM is a form of signal modulation where:
+
+The amplitude of regularly spaced pulses is varied according to the sample values of the message signal.
+
+In digital communication systems:
+
+PAM is often the first step in analog-to-digital conversion, where the analog signal is sampled and then transmitted as amplitude-modulated pulses.
+
+🔗 Relation between Nyquist Criterion and PAM:
+Sampling in PAM:
+
+PAM involves sampling the continuous signal at discrete time intervals.
+
+To avoid distortion in reconstruction, Nyquist’s sampling criterion must be satisfied during this step.
+
+Aliasing in PAM:
+
+If the PAM system samples below the Nyquist rate, aliasing occurs, and the original signal cannot be recovered correctly at the receiver.
+
+Reconstruction:
+
+The signal at the receiver is often reconstructed using a low-pass filter.
+
+Accurate reconstruction is only possible if the signal was sampled according to the Nyquist criterion.

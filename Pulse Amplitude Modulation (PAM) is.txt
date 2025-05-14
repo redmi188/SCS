@@ -1,0 +1,30 @@
+Pulse Amplitude Modulation (PAM) is conceptually simple and widely used in communication systems (e.g., Ethernet, USB, DSL). However, it comes with several practical drawbacks that limit its performance in real-world systems.
+
+🔻 Drawbacks of PAM in Practical Communication Systems
+1. Noise Sensitivity
+Issue: Since information is carried in the amplitude of pulses, PAM is very sensitive to noise, especially additive noise (like thermal noise or interference).
+Result: Noise alters the amplitude, which directly distorts the transmitted data.
+
+2. Power Efficiency
+Issue: PAM requires more power to maintain reliable transmission over longer distances or in noisy environments.
+Result: Higher power consumption reduces battery life in mobile or wireless systems.
+
+3. Limited Bandwidth Efficiency
+Issue: As the number of amplitude levels increases (e.g., PAM-4, PAM-8), the spacing between levels decreases, making it harder to distinguish them at the receiver.
+Result: Increases complexity and requires better signal-to-noise ratio (SNR) for reliable detection.
+
+4. Inter-Symbol Interference (ISI)
+Issue: In channels with limited bandwidth or multipath effects, symbols can overlap, causing ISI.
+Result: Requires equalization or complex filtering to mitigate, increasing system complexity.
+
+5. No Constant Envelope
+Issue: PAM signals have varying amplitudes, unlike schemes like FSK or PSK that can maintain constant amplitude.
+Result: Cannot use efficient, non-linear power amplifiers (which are common in wireless systems), leading to inefficient transmitter designs.
+
+6. Synchronization Complexity
+Issue: Timing and amplitude synchronization between transmitter and receiver are crucial.
+Result: Slight errors in synchronization can cause large errors in symbol detection.
+
+7. Quantization Error (in Digital PAM)
+Issue: In digital systems, PAM involves quantization of analog samples.
+Result: Quantization introduces distortion and limits signal fidelity.
